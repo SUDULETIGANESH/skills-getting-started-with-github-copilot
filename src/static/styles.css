@@ -10,12 +10,15 @@
 }
 
 .participants-list {
-  list-style: disc;
-  margin-left: 18px;
+  list-style: none;
+  margin-left: 0;
   padding-left: 0;
 }
 
-.participants-list li {
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #ffffff;
   border: 1px solid #eee;
   padding: 8px 10px;
@@ -24,4 +27,34 @@
   font-size: 0.95rem;
   color: #333;
   box-shadow: 0 1px 1px rgba(0,0,0,0.02);
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: #d32f2f;
+  border: none;
+  padding: 4px 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 3px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+}
+
+.delete-btn:hover {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.delete-btn:active {
+  background-color: #ef9a9a;
 }
